@@ -21,9 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //self.img01 = UIImage(named: "img01")!
-        //self.img02 = UIImage(named: "img02")!
-        //self.img03 = UIImage(named: "img03")!
         imglist!.append(img01!)
         imglist!.append(img02!)
         imglist!.append(img03!)
