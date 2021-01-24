@@ -13,6 +13,7 @@
 		B04865AC25B464F0004ED875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04865AA25B464F0004ED875 /* Main.storyboard */; };
 		B04865AE25B464F5004ED875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04865AD25B464F5004ED875 /* Assets.xcassets */; };
 		B04865B125B464F5004ED875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04865AF25B464F5004ED875 /* LaunchScreen.storyboard */; };
+		B07A834525BD43A500AC8F9A /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A834425BD43A500AC8F9A /* ExpansionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B04865AD25B464F5004ED875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04865B025B464F5004ED875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04865B225B464F5004ED875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07A834425BD43A500AC8F9A /* ExpansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B04865A425B464F0004ED875 /* AppDelegate.swift */,
 				B04865A625B464F0004ED875 /* SceneDelegate.swift */,
 				B04865A825B464F0004ED875 /* ViewController.swift */,
+				B07A834425BD43A500AC8F9A /* ExpansionViewController.swift */,
 				B04865AA25B464F0004ED875 /* Main.storyboard */,
 				B04865AD25B464F5004ED875 /* Assets.xcassets */,
 				B04865AF25B464F5004ED875 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07A834525BD43A500AC8F9A /* ExpansionViewController.swift in Sources */,
 				B04865A925B464F0004ED875 /* ViewController.swift in Sources */,
 				B04865A525B464F0004ED875 /* AppDelegate.swift in Sources */,
 				B04865A725B464F0004ED875 /* SceneDelegate.swift in Sources */,
