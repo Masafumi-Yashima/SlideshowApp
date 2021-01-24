@@ -9,10 +9,15 @@
 import UIKit
 
 class ExpansionViewController: UIViewController {
-
+    @IBOutlet weak var ExpansionView: UIImageView!
+    
+    var count :Int = 0
+    var imglist :[UIImage]? = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ExpansionView.image = imglist![self.count]
         // Do any additional setup after loading the view.
     }
 

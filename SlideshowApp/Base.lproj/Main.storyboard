@@ -80,7 +80,7 @@
                     <connections>
                         <outlet property="BackButton" destination="OaE-TY-ppf" id="mf1-Vt-HE4"/>
                         <outlet property="GoButton" destination="j2V-cT-u0A" id="Kp4-0f-vsI"/>
-                        <outlet property="ImageView01" destination="XTO-AK-fcx" id="yLf-4H-ipT"/>
+                        <outlet property="ImageView" destination="XTO-AK-fcx" id="PwA-6M-Bab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,6 +132,9 @@
                         <viewLayoutGuide key="safeArea" id="oEo-ig-g1s"/>
                     </view>
                     <navigationItem key="navigationItem" id="w2y-dr-nGw"/>
+                    <connections>
+                        <outlet property="ExpansionView" destination="N7m-Ae-VVk" id="61p-Fh-4PY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewi-SQ-Nkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="5EV-e9-rL9" userLabel="Exit" sceneMemberID="exit"/>

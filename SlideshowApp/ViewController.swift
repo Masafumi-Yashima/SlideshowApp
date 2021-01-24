@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var timer :Timer!
     
     //UIparts
-    @IBOutlet weak var ImageView01: UIImageView!
+    @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var GoButton: UIButton!
     @IBOutlet weak var BackButton: UIButton!
     
@@ -30,12 +30,12 @@ class ViewController: UIViewController {
         imglist!.append(img01!)
         imglist!.append(img02!)
         imglist!.append(img03!)
-        ImageView01.image = imglist![self.count]
+        ImageView.image = imglist![self.count]
         self.count += 1
     }
     
     @objc func slideshow(_ timer :Timer){
-        ImageView01.image = imglist![self.count]
+        ImageView.image = imglist![self.count]
         if self.count == imglist!.count - 1 {
             self.count = 0
         }
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func GoButton(_ sender: Any) {
-        ImageView01.image = imglist![self.count]
+        ImageView.image = imglist![self.count]
         if self.count == imglist!.count - 1 {
             self.count = 0
         }
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BackButton(_ sender: Any) {
-        ImageView01.image = imglist![self.count]
+        ImageView.image = imglist![self.count]
         if self.count == 0{
             self.count = imglist!.count - 1
         }
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
             sender.setTitle("再生", for: UIControl.State.normal)
             GoButton.isEnabled = true
             BackButton.isEnabled = true
-            ImageView01.stopAnimating()
+            ImageView.stopAnimating()
             if self.timer != nil{
                 self.timer.invalidate()
                 self.timer = nil
@@ -87,6 +87,12 @@ class ViewController: UIViewController {
     
     @IBAction func TapImageView(_ sender: Any) {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let expansionviewcontroller :ExpansionViewController = segue.destination as! ExpansionViewController
+        expansionviewcontroller.count = self.count
+        expansionviewcontroller.imglist  = self.imglist
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
