@@ -31,36 +31,39 @@ class ViewController: UIViewController {
         imglist!.append(img02!)
         imglist!.append(img03!)
         ImageView.image = imglist![self.count]
-        self.count += 1
+        //self.count += 1
     }
     
     @objc func slideshow(_ timer :Timer){
-        ImageView.image = imglist![self.count]
         if self.count == imglist!.count - 1 {
             self.count = 0
+            ImageView.image = imglist![self.count]
         }
         else{
             self.count += 1
+            ImageView.image = imglist![self.count]
         }
     }
     
     @IBAction func GoButton(_ sender: Any) {
-        ImageView.image = imglist![self.count]
         if self.count == imglist!.count - 1 {
             self.count = 0
+            ImageView.image = imglist![self.count]
         }
         else{
             self.count += 1
+            ImageView.image = imglist![self.count]
         }
     }
     
     @IBAction func BackButton(_ sender: Any) {
-        ImageView.image = imglist![self.count]
         if self.count == 0{
             self.count = imglist!.count - 1
+            ImageView.image = imglist![self.count]
         }
         else{
             self.count -= 1
+            ImageView.image = imglist![self.count]
         }
     }
     
