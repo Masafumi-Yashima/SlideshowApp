@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     var img02 :UIImage? = UIImage(named: "img02")
     var img03 :UIImage? = UIImage(named: "img03")
     var imglist :[UIImage]? = []
-    //var anime :UIImage?
     var count :Int = 0
     var show_count :Int = 0
-    //var animecount :Int = 0
     
     //timer
     var timer :Timer!
-    //var timer_sec :Int = 0
     
     //UIparts
     @IBOutlet weak var ImageView01: UIImageView!
