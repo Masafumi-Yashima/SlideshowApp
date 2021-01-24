@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     var imglist :[UIImage]? = []
     var anime :UIImage?
     var count :Int = 0
+    var animecount :Int = 0
     
     @IBOutlet weak var ImageView01: UIImageView!
+    @IBOutlet weak var GoButton: UIButton!
+    @IBOutlet weak var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +54,24 @@ class ViewController: UIViewController {
     
     @IBAction func PlayAndStopButton(_ sender: UIButton) {
         if sender.titleLabel?.text == "再生"{
-            anime = UIImage.animatedImage(with: imglist!, duration: 2)
-            ImageView01.image = anime
+            //anime = UIImage.animatedImage(with: imglist!, duration: 2)
+            //ImageView01.image = anime
             sender.setTitle("停止", for: UIControl.State.normal)
+            GoButton.isEnabled = false
+            BackButton.isEnabled = false
+            ImageView01.animationImages = imglist!
+            ImageView01.animationRepeatCount = 0
+            ImageView01.animationDuration = 5
+            ImageView01.startAnimating()
+
         }
         else if sender.titleLabel?.text == "停止"{
-            ImageView01.image = nil
-            sender.setTitle("再生", for: .normal)
+            //ImageView01.image = nil
+            sender.setTitle("再生", for: UIControl.State.normal)
+            GoButton.isEnabled = true
+            BackButton.isEnabled = true
+            ImageView01.stopAnimating()
+            
         }
 
     }
