@@ -86,6 +86,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Kkx-4m-Rk6">
                     <connections>
+                        <action selector="TapImageView:" destination="BYZ-38-t0r" id="bCj-0O-Rex"/>
                         <segue destination="ae6-OF-qAg" kind="show" id="C3m-aC-ykP"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -110,9 +111,12 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="fad-zL-tHI"/>
                                     <constraint firstAttribute="height" constant="40" id="owb-sy-m0H"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="戻る">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5EV-e9-rL9" kind="unwind" unwindAction="unwind:" id="v8T-yT-vxt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -130,6 +134,7 @@
                     <navigationItem key="navigationItem" id="w2y-dr-nGw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewi-SQ-Nkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5EV-e9-rL9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="926" y="130"/>
         </scene>

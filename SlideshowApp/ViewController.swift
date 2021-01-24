@@ -83,5 +83,9 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func TapImageView(_ sender: Any) {
+        
+    }
 }
 
