@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     var img03 :UIImage? = UIImage(named: "img03")
     var imglist :[UIImage]? = []
     var count :Int = 0
-    var show_count :Int = 0
     
     //timer
     var timer :Timer!
@@ -31,15 +30,17 @@ class ViewController: UIViewController {
         imglist!.append(img01!)
         imglist!.append(img02!)
         imglist!.append(img03!)
+        ImageView01.image = imglist![self.count]
+        self.count += 1
     }
     
     @objc func slideshow(_ timer :Timer){
-        ImageView01.image = imglist![self.show_count]
-        if self.show_count == imglist!.count - 1 {
-            self.show_count = 0
+        ImageView01.image = imglist![self.count]
+        if self.count == imglist!.count - 1 {
+            self.count = 0
         }
         else{
-            self.show_count += 1
+            self.count += 1
         }
     }
     
