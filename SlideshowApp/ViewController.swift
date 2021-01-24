@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     var img01 :UIImage? = UIImage(named: "img01")
     var img02 :UIImage? = UIImage(named: "img02")
     var img03 :UIImage? = UIImage(named: "img03")
+    var img04 :UIImage? = UIImage(named: "img04")
+    var img05 :UIImage? = UIImage(named: "img05")
+    var img06 :UIImage? = UIImage(named: "img06")
     var imglist :[UIImage]? = []
     var count :Int = 0
     
@@ -30,6 +33,9 @@ class ViewController: UIViewController {
         imglist!.append(img01!)
         imglist!.append(img02!)
         imglist!.append(img03!)
+        imglist!.append(img04!)
+        imglist!.append(img05!)
+        imglist!.append(img06!)
         ImageView.image = imglist![self.count]
         //self.count += 1
     }

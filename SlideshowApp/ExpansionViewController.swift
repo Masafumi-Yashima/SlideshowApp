@@ -18,6 +18,7 @@ class ExpansionViewController: UIViewController {
         super.viewDidLoad()
 
         ExpansionView.image = imglist![self.count]
+        ExpansionView.contentMode = UIImageView.ContentMode.center
         // Do any additional setup after loading the view.
     }
 
