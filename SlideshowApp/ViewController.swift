@@ -37,28 +37,31 @@ class ViewController: UIViewController {
     }
     
     @objc func slideshow(_ timer :Timer){
-        ImageView01.image = imglist![self.count]
-        //self.show_count += 1
+        ImageView01.image = imglist![self.show_count]
+        if self.show_count == imglist!.count - 1 {
+            self.show_count = 0
+        }
+        else{
+            self.show_count += 1
+        }
     }
     
     @IBAction func GoButton(_ sender: Any) {
+        ImageView01.image = imglist![self.count]
         if self.count == imglist!.count - 1 {
-            ImageView01.image = imglist![self.count]
             self.count = 0
         }
         else{
-            ImageView01.image = imglist![self.count]
             self.count += 1
         }
     }
     
     @IBAction func BackButton(_ sender: Any) {
+        ImageView01.image = imglist![self.count]
         if self.count == 0{
-            ImageView01.image = imglist![self.count]
             self.count = imglist!.count - 1
         }
         else{
-            ImageView01.image = imglist![self.count]
             self.count -= 1
         }
     }
@@ -68,16 +71,20 @@ class ViewController: UIViewController {
             sender.setTitle("停止", for: UIControl.State.normal)
             GoButton.isEnabled = false
             BackButton.isEnabled = false
-            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideshow(_:)), userInfo: nil, repeats: true)
+            if self.timer == nil{
+                self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideshow(_:)), userInfo: nil, repeats: true)
+            }
         }
         else if sender.titleLabel?.text == "停止"{
             sender.setTitle("再生", for: UIControl.State.normal)
             GoButton.isEnabled = true
             BackButton.isEnabled = true
             ImageView01.stopAnimating()
+            if self.timer != nil{
+                self.timer.invalidate()
+                self.timer = nil
+            }
         }
-
     }
-    
 }
 
