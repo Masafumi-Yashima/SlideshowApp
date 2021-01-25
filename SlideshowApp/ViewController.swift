@@ -76,6 +76,7 @@ class ViewController: UIViewController {
     @IBAction func PlayAndStopButton(_ sender: UIButton) {
         if sender.titleLabel?.text == "再生"{
             sender.setTitle("停止", for: UIControl.State.normal)
+            ImageView.isUserInteractionEnabled = false
             GoButton.isEnabled = false
             BackButton.isEnabled = false
             if self.timer == nil{
@@ -84,6 +85,7 @@ class ViewController: UIViewController {
         }
         else if sender.titleLabel?.text == "停止"{
             sender.setTitle("再生", for: UIControl.State.normal)
+            ImageView.isUserInteractionEnabled = true
             GoButton.isEnabled = true
             BackButton.isEnabled = true
             ImageView.stopAnimating()
