@@ -14,6 +14,12 @@
 		B04865AE25B464F5004ED875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04865AD25B464F5004ED875 /* Assets.xcassets */; };
 		B04865B125B464F5004ED875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04865AF25B464F5004ED875 /* LaunchScreen.storyboard */; };
 		B07A834525BD43A500AC8F9A /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07A834425BD43A500AC8F9A /* ExpansionViewController.swift */; };
+		B0F653FE25BF0B2600B1F56F /* img03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F653FB25BF0B2600B1F56F /* img03.jpg */; };
+		B0F653FF25BF0B2600B1F56F /* img02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F653FC25BF0B2600B1F56F /* img02.jpg */; };
+		B0F6540025BF0B2600B1F56F /* img01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F653FD25BF0B2600B1F56F /* img01.jpg */; };
+		B0F6540225BF0B2C00B1F56F /* img04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F6540125BF0B2C00B1F56F /* img04.jpg */; };
+		B0F6540425BF0B3300B1F56F /* img05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F6540325BF0B3300B1F56F /* img05.jpg */; };
+		B0F6540625BF0B3A00B1F56F /* img06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F6540525BF0B3A00B1F56F /* img06.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		B04865B025B464F5004ED875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04865B225B464F5004ED875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07A834425BD43A500AC8F9A /* ExpansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
+		B0F653FB25BF0B2600B1F56F /* img03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img03.jpg; sourceTree = "<group>"; };
+		B0F653FC25BF0B2600B1F56F /* img02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img02.jpg; sourceTree = "<group>"; };
+		B0F653FD25BF0B2600B1F56F /* img01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img01.jpg; sourceTree = "<group>"; };
+		B0F6540125BF0B2C00B1F56F /* img04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img04.jpg; sourceTree = "<group>"; };
+		B0F6540325BF0B3300B1F56F /* img05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img05.jpg; sourceTree = "<group>"; };
+		B0F6540525BF0B3A00B1F56F /* img06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img06.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,12 @@
 				B04865AA25B464F0004ED875 /* Main.storyboard */,
 				B04865AD25B464F5004ED875 /* Assets.xcassets */,
 				B04865AF25B464F5004ED875 /* LaunchScreen.storyboard */,
+				B0F653FD25BF0B2600B1F56F /* img01.jpg */,
+				B0F653FC25BF0B2600B1F56F /* img02.jpg */,
+				B0F653FB25BF0B2600B1F56F /* img03.jpg */,
+				B0F6540125BF0B2C00B1F56F /* img04.jpg */,
+				B0F6540325BF0B3300B1F56F /* img05.jpg */,
+				B0F6540525BF0B3A00B1F56F /* img06.jpg */,
 				B04865B225B464F5004ED875 /* Info.plist */,
 			);
 			path = SlideshowApp;
@@ -128,9 +146,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F6540225BF0B2C00B1F56F /* img04.jpg in Resources */,
+				B0F653FE25BF0B2600B1F56F /* img03.jpg in Resources */,
+				B0F6540425BF0B3300B1F56F /* img05.jpg in Resources */,
+				B0F653FF25BF0B2600B1F56F /* img02.jpg in Resources */,
+				B0F6540025BF0B2600B1F56F /* img01.jpg in Resources */,
 				B04865B125B464F5004ED875 /* LaunchScreen.storyboard in Resources */,
 				B04865AE25B464F5004ED875 /* Assets.xcassets in Resources */,
 				B04865AC25B464F0004ED875 /* Main.storyboard in Resources */,
+				B0F6540625BF0B3A00B1F56F /* img06.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

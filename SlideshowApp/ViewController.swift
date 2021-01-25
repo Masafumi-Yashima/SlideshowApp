@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     //picture
-    var img01 :UIImage? = UIImage(named: "img01")
-    var img02 :UIImage? = UIImage(named: "img02")
-    var img03 :UIImage? = UIImage(named: "img03")
-    var img04 :UIImage? = UIImage(named: "img04")
-    var img05 :UIImage? = UIImage(named: "img05")
-    var img06 :UIImage? = UIImage(named: "img06")
+    var img01 :UIImage? = UIImage(named: "img01.jpg")
+    var img02 :UIImage? = UIImage(named: "img02.jpg")
+    var img03 :UIImage? = UIImage(named: "img03.jpg")
+    var img04 :UIImage? = UIImage(named: "img04.jpg")
+    var img05 :UIImage? = UIImage(named: "img05.jpg")
+    var img06 :UIImage? = UIImage(named: "img06.jpg")
     var imglist :[UIImage]? = []
     var count :Int = 0
     
