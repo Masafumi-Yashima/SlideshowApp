@@ -103,14 +103,10 @@ class ViewController: UIViewController {
         expansionviewcontroller.imglist  = self.imglist
         if timer != nil{
             self.timer.invalidate()
-            self.timer = nil
         }
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        if self.timer == nil{
-            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(slideshow(_:)), userInfo: nil, repeats: true)
-        }
     }
 }
 
